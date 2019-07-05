@@ -1,0 +1,17 @@
+
+
+.logo-container{
+  width:100%;
+
+
+  /* margin-left: 40px; */
+}
+.logo{
+
+  width:200px;
+
+}
+mat-toolbar{
+  height: 80px;
+
+}
