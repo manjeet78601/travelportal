@@ -1,0 +1,38 @@
+@import '~@angular/material/theming';
+// @import '_theming.scss';
+
+@include mat-core();
+
+
+// @mixin angular-material-theme($tourism-app-theme)
+// {
+//   @include angular-material-theme($tourism-app-theme);
+// }
+
+
+
+
+$tourism-app-primary :mat-palette($mat-green,300);
+
+$tourism-app-accent:  mat-palette($mat-blue, 50);
+
+$tourism-app-warn: mat-palette($mat-red);
+
+$tourism-app-theme : mat-light-theme($tourism-app-primary, $tourism-app-accent,$tourism-app-warn);
+
+@include angular-material-theme($tourism-app-theme);
+
+
+.navtabs-container{
+  background-color: mat-color($tourism-app-accent);
+}
+
+
+// $dark-primary: mat-palette($mat-blue-grey);
+// $dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+// $dark-warn:    mat-palette($mat-deep-orange);
+// $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+// .unicorn-dark-theme {
+//   @include angular-material-theme($dark-theme);
+// }
