@@ -4,6 +4,76 @@
 @include mat-core();
 
 
+
+
+
+$the-primary: (
+  50 : #f4e2e2,
+  100 : #e5b7b7,
+  200 : #d38787,
+  300 : #c15757,
+  400 : #b43333,
+  500 : #a70f0f,
+  600 : #9f0d0d,
+  700 : #960b0b,
+  800 : #8c0808,
+  900 : #7c0404,
+  A100 : #ffa9a9,
+  A200 : #ff7676,
+  A400 : #ff4343,
+  A700 : #ff2a2a,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #ffffff,
+      A700 : #ffffff,
+  )
+);
+
+$the-accent: (
+  50 : #f4e2e2,
+  100 : #e5b7b7,
+  200 : #d38787,
+  300 : #c15757,
+  400 : #b43333,
+  500 : #a70f0f,
+  600 : #9f0d0d,
+  700 : #960b0b,
+  800 : #8c0808,
+  900 : #7c0404,
+  A100 : #ffa9a9,
+  A200 : #ff7676,
+  A400 : #ff4343,
+  A700 : #ff2a2a,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #ffffff,
+      A700 : #ffffff,
+        )
+);
+
+
 // @mixin angular-material-theme($tourism-app-theme)
 // {
 //   @include angular-material-theme($tourism-app-theme);
@@ -12,9 +82,9 @@
 
 
 
-$tourism-app-primary :mat-palette($mat-green,300);
+$tourism-app-primary :mat-palette($the-primary,300,200,400);
 
-$tourism-app-accent:  mat-palette($mat-blue, 50);
+$tourism-app-accent:  mat-palette($the-accent, 100,200,400);
 
 $tourism-app-warn: mat-palette($mat-red);
 
@@ -24,8 +94,17 @@ $tourism-app-theme : mat-light-theme($tourism-app-primary, $tourism-app-accent,$
 
 
 .navtabs-container{
-  background-color: mat-color($tourism-app-accent);
+  background-color: mat-color($tourism-app-primary,200);
 }
+
+.mat-list-option:hover,
+.mat-list-option.mat-list-item-focus,
+.mat-nav-list .mat-list-item:hover,
+.mat-nav-list .mat-list-item.mat-list-item-focus{
+  background-color:mat-color($tourism-app-primary,100);
+  color:mat-color($tourism-app-primary,900);
+}
+
 
 
 // $dark-primary: mat-palette($mat-blue-grey);
