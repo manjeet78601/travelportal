@@ -1,0 +1,24 @@
+.container1{
+  height:100vh;
+  text-decoration: none;
+  background: url(/assets/images/banner.jpg) no-repeat;
+}
+
+.book-on-container{
+  padding: 35px 115px;
+
+}
+
+
+.book-button{
+  width:120px;
+  color:#000;
+  border:1px solid gray;
+  text-transform: uppercase;
+
+}
+.center{
+  text-align: center;
+  color:red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

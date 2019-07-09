@@ -10,17 +10,25 @@ import { OffersComponent } from './offers/offers.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { LocationComponent } from './locations/location/location.component';
+import { GalleryComponent } from './gallery/gallery/gallery.component';
 
 const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent },
   { path: 'celebration', component: CelebrationComponent},
-  { path: 'food-bevarage', component: FoodBeverageComponent},
+  { path: 'food-beverage', component: FoodBeverageComponent},
+  {path: 'foodbeverage', redirectTo: 'food-beverage', pathMatch: 'full'},
   {path: 'lifestyle', component: LifestyleComponent},
   {path: 'weddings', component: WeddingsComponent},
   {path: 'offers', component: OffersComponent},
+  {path: 'location', component: LocationComponent},
+  {path: 'gallery', component: GalleryComponent},
+
+
+
   {path: 'signin', component: SigninComponent},
   {path: 'signup', component: SignupComponent},
-  {path: '', component:HomeComponent }
+  {path: '', component: HomeComponent }
  ];
 
 @NgModule({

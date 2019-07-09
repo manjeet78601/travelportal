@@ -24,7 +24,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/tourism.scss"
+              "src/tourism.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
 
             ],
             "scripts": []

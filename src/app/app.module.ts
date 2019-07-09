@@ -26,6 +26,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import { LocationComponent } from './locations/location/location.component';
+import { GalleryComponent } from './gallery/gallery/gallery.component';
 //import {FlexLayoutModule} from '@angular/flex-layout';
 
 
@@ -53,7 +55,9 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    LocationComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

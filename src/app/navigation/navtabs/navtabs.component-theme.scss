@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme($tourism){
+
+ $primary :map-get($tourism, primary);
+ $accent:map-get($tourism , accent);
+
+.navtabs-container{
+  background-color: mat-color($tourism-app-primary,200);
+}
+ }
+
+
+
+
+
+
