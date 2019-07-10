@@ -1,7 +1,9 @@
 .container1{
   height:100vh;
   text-decoration: none;
-  background: url(/assets/images/banner.jpg) no-repeat;
+  background: url(/assets/images/banner.jpg) center center no-repeat;
+ background:cover;
+ height: calc(100vh-145);
 }
 
 .book-on-container{
@@ -20,6 +22,63 @@
 }
 .center{
   text-align: center;
-  color:red;
+  color:#fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.header-container{
+padding:60px 20px;
+text-align: center;
+/* max-width: 900px; */
+}
+.header-container .mat-display-2{
+  color:#fff;
+}
+.header-container .mat-display-1{
+  margin:10px;
+}
+.uttrakhand{
+  position: relative;
+ width: 100%;
+
+  text-align: center;
+  transform: translate(-50%, -40%);
+
+}
+.uttrakhand h3{
+ /* height: 40vh; */
+  /* -webkit-text-fill-color:transparent; */
+  /* background:url(/assets/images/uttarkhand.jpg)  center center no-repeat;
+  -webkit-backround-clip:text; */
+  font-stretch:narrower;
+  font-style:italic;
+  font-size:200px;
+   color :lightblue;
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family:Roboto, sans-serif;
+/* top:50%; */
+left:50%;
+position: relative;
+
+}
+
+/* @media all and (min-width:768px){
+  .header-container{
+  height:100vh;
+  }
+} */
+@media all and (max-width:599px){
+  .header-container .mat-display-1{
+    font-size: 3rem;
+    line-height: 1.1;
+
+  }
+  .header-container .mat-display-2{
+    font-size: 3rem;
+    line-height: 1.1;
+
+
+  }
+}
+
