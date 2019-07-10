@@ -11,11 +11,12 @@
 
 
 .book-button{
-  width:120px;
+  width:130px;
   color:#000;
   border:1px solid gray;
   text-transform: uppercase;
-
+  border-radius: 10px;
+  background: rgb(237, 252, 237);
 }
 .center{
   text-align: center;

@@ -1,5 +1,4 @@
 @import '~@angular/material/theming';
-
 @mixin navtabs-component-theme($tourism){
 
  $primary :map-get($tourism, primary);
@@ -7,6 +6,9 @@
 
 .navtabs-container{
   background-color: mat-color($tourism-app-primary,200);
+}
+.mat-tab-link{
+  text-decoration: none !important;
 }
  }
 
