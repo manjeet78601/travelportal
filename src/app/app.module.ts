@@ -28,6 +28,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { LocationComponent } from './locations/location/location.component';
 import { GalleryComponent } from './gallery/gallery/gallery.component';
+import { ContactComponent } from './contacts/contact/contact.component';
 //import {FlexLayoutModule} from '@angular/flex-layout';
 
 
@@ -57,7 +58,8 @@ import { GalleryComponent } from './gallery/gallery/gallery.component';
     SidenavListComponent,
     NavtabsComponent,
     LocationComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { LocationComponent } from './locations/location/location.component';
 import { GalleryComponent } from './gallery/gallery/gallery.component';
+import { ContactComponent } from './contacts/contact/contact.component';
 
 const routes: Routes = [
   {path: 'accomodation', component: AccomodationComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'offers', component: OffersComponent},
   {path: 'location', component: LocationComponent},
   {path: 'gallery', component: GalleryComponent},
+  {path: 'contact', component: ContactComponent},
 
 
 
