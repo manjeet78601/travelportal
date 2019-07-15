@@ -12,14 +12,14 @@
 }
 
 
-.book-button{
+/* .book-button{
   width:130px;
   color:#000;
   border:1px solid gray;
   text-transform: uppercase;
   border-radius: 10px;
   background: rgb(237, 252, 237);
-}
+} */
 .center{
   text-align: center;
   color:#fff;
@@ -67,7 +67,7 @@ text-align: center;
 }
 
 .home-section1 h3{
-  background: darkseagreen;
+  /* background: darkseagreen; */
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    size: 20px;
    padding: 20px;
