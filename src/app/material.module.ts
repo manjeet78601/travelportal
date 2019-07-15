@@ -28,7 +28,7 @@ MatCardModule],
      MatSidenavModule,
      MatIconModule,
     MatListModule,
-  MatTabsModule,
-MatCardModule]
+   MatTabsModule,
+   MatCardModule]
 })
 export class MaterialModule { }
