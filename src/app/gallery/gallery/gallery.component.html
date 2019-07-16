@@ -7,3 +7,22 @@
 </a>
 </div>
 </aside> -->
+
+  <h1>{{title}}</h1>
+<div clas="row">
+<button class="btn btn-lg btn-danger" [class.active] = "filterBy =='all'" (click)="filterBy='all'">All</button>
+<button class="btn btn-lg btn-danger" [class.active] = "filterBy =='Himachal'" (click)="filterBy='Himachal'">Himachal</button>
+<button class="btn btn-lg btn-danger" [class.active] = "filterBy =='Jammu&Kashmir'" (click)="filterBy='Jammu&Kashmir'">Jammu & Kashmir</button>
+<button class="btn btn-lg btn-danger" [class.active] = "filterBy =='Uttarakhand'" (click)="filterBy='Uttarakhand'">Uttarakhand</button>
+
+<ul id="thumbnailslist">
+  <li *ngFor="let image of (visibleImages | imageFilter: filterBy)">
+<a [routerLink]="['/image', image.id]">
+<img src="{{image.url}}" class="ab" width="200" height="100">
+</a>
+  </li>
+
+</ul>
+</div>
+
+

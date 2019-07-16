@@ -13,8 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { LocationComponent } from './locations/location/location.component';
 import { GalleryComponent } from './gallery/gallery/gallery.component';
 import { ContactComponent } from './contacts/contact/contact.component';
+import { ImageDetailsComponent } from './image/image-details/image-details.component';
 
-const routes: Routes = [
+  const appRoutes: Routes = [
   {path: 'accomodation', component: AccomodationComponent },
   { path: 'celebration', component: CelebrationComponent},
   { path: 'food-beverage', component: FoodBeverageComponent},
@@ -23,19 +24,22 @@ const routes: Routes = [
   {path: 'weddings', component: WeddingsComponent},
   {path: 'offers', component: OffersComponent},
   {path: 'location', component: LocationComponent},
-  {path: 'gallery', component: GalleryComponent},
+  // {path: 'gallery', component: GalleryComponent},
   {path: 'contact', component: ContactComponent},
 
 
 
   {path: 'signin', component: SigninComponent},
   {path: 'signup', component: SignupComponent},
-  {path: '', component: HomeComponent }
+  {path: '', component: HomeComponent },
+   {path: 'gallery', component: GalleryComponent},
+   {path: 'image/:id', component: ImageDetailsComponent},
+  {path : '', redirectTo: '/gallery', pathMatch: 'full'},
  ];
 
 @NgModule({
   declarations: [ ],
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
 exports: [RouterModule]
 
 })

@@ -30,7 +30,10 @@ import { LocationComponent } from './locations/location/location.component';
 import { GalleryComponent } from './gallery/gallery/gallery.component';
 import { ContactComponent } from './contacts/contact/contact.component';
 //import {FlexLayoutModule} from '@angular/flex-layout';
-
+import {AlertModule} from  'ng2-bootstrap/alert';
+import { ImageFilterPipe } from './shared/filter.pipe';
+import { ImageService } from './shared/image.service';
+import { ImageDetailsComponent } from './image/image-details/image-details.component';
 
 @NgModule({
   declarations: [
@@ -59,16 +62,22 @@ import { ContactComponent } from './contacts/contact/contact.component';
     NavtabsComponent,
     LocationComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    ImageFilterPipe,
+    ImageDetailsComponent
+    // AlertModule
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule.forRoot()
+
     // FlexLayoutModule
   ],
-  providers: [],
+  providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
