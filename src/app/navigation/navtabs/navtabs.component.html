@@ -6,6 +6,11 @@ routerLinkActive #home="routerLinkActive"[active]="home.isActive">
 Home
 </a>
 
+<a mat-tab-link routerLink="/gallery"
+routerLinkActive #gallery="routerLinkActive"[active]="gallery.isActive">
+Gallery
+</a>
+
 <a mat-tab-link routerLink="/celebration"
 routerLinkActive #celebration="routerLinkActive"[active]="celebration.isActive">
 Celebration
@@ -40,10 +45,7 @@ routerLinkActive #location="routerLinkActive"[active]="location.isActive">
 Locations
 </a>
 
-<a mat-tab-link routerLink="/gallery"
-routerLinkActive #gallery="routerLinkActive"[active]="gallery.isActive">
-Gallery
-</a>
+
 
 </nav>
 </div>
